@@ -1,0 +1,11 @@
+Use variables: (password_face, password_intsag, password_email, user_face, user_instag, user_email)
+
+Graphical interface: ( create a new, user name, password )
+
+Display: (asking the user for the password for the password manager and which password account he want to use, or if he wants to storage a new password)
+
+Search or storage the password: (search for the right password for the right accounts in database and decrypt it or storage and encrypting the user’s new password)
+
+Print or copy the password
+
+End program
