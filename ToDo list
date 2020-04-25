@@ -9,3 +9,8 @@ Search or storage the password: (search for the right password for the right acc
 Print or copy the password
 
 End program
+
+For Milestone 2 :
+- I added the main_windows for the user to add and search for accounts
+- I setup new database (user.db) to store the accounts (setup_database.py)
+- Add a insert_user and select_user to add user account to the database and to select the user from the database

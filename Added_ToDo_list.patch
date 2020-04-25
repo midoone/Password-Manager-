@@ -1,0 +1,113 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1586667557232)
++++ .idea/vcs.xml	(date 1586667557232)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.gitignore	(date 1586667558165)
++++ .idea/.gitignore	(date 1586667558165)
+@@ -0,0 +1,2 @@
++# Default ignored files
++/workspace.xml
+Index: .idea/Password-Manager-.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/Password-Manager-.iml	(date 1587004734456)
++++ .idea/Password-Manager-.iml	(date 1587004734456)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.8 (untitled) (2)" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1587004734649)
++++ .idea/misc.xml	(date 1587004734649)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (untitled) (2)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(date 1586667557341)
++++ .idea/modules.xml	(date 1586667557341)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Password-Manager-.iml" filepath="$PROJECT_DIR$/.idea/Password-Manager-.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: Password Manager.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Password Manager.py	(revision 51efeae6902b83bddb3372065e78d1cd9467540d)
++++ Password Manager.py	(date 1587500070243)
+@@ -7,11 +7,32 @@
+     if test_key != user_key:
+         make_window()
+     else:
+-        return print("Welcome")
++        return user_window()
+ def make_window():
+     window = tk.Toplevel(root)
+     tk.Label(window, text='WRONG KEY\n close the window and try again ').pack(padx=30, pady=30)
+ 
++def user_window():
++    root = tk.Tk()
++    canvas=tk.Canvas (root, height=300, width=400)
++    canvas.pack ()
++
++    button=tk.Button (root, text="Search", bg='#80c1ff', bd=5,)
++    button.place (relx=0.3, rely=0.45)
++    button=tk.Button (root, text="Add", bg='#80c1ff', bd=5, )
++    button.place (relx=0.66, rely=0.45)
++
++
++    entry=tk.Entry (root)
++    entry.place (relx=0.3, rely=0.40, relwidth=0.5, relheight=0.05)
++    entry=tk.Entry (root)
++    entry.place (relx=0.3, rely=0.30, relwidth=0.5, relheight=0.05)
++
++    label=tk.Label (root, text="Master Key", bg='#80c1ff', bd=5)
++    label.place (relx=0.3, rely=0.35, relwidth=0.5, relheight=0.05)
++    label=tk.Label (root, text="Master Key", bg='#80c1ff', bd=5)
++    label.place (relx=0.3, rely=0.25, relwidth=0.5, relheight=0.05)
++
+ 
+ root = tk.Tk()
+ root.title("Password Manager")
