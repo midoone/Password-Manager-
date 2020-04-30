@@ -14,3 +14,8 @@ For Milestone 2 :
 - I added the main_windows for the user to add and search for accounts
 - I setup new database (user.db) to store the accounts (setup_database.py)
 - Add a insert_user and select_user to add user account to the database and to select the user from the database
+For Milestone 3 :
+- i imported module clipboard to copy the password from the database
+- and i added 3 top level windows more to show the result of the the 2 main windows
+- and i used the if statement and the for statement to look for the right password in the database
+- i change the color of all windows
